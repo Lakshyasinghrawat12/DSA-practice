@@ -14,10 +14,12 @@ for i, vlaue in enumerate(nums):
 
     if remaning in seen:  
 
-        '''cheks weather the remaning value is already in the directory or not if yes then it return 
+        '''checks weather the remaining value is already in the directory or not if yes then it returns 
         the indexes of the value and if not it adds it to the directory so that it can be seen in the future 
         assuming there is a possible solution to the problem''' 
 
         print( [i, seen[remaning]])
     else:
         seen[vlaue]= i
+
+#https://leetcode.com/problems/two-sum/description/
