@@ -35,3 +35,25 @@ class Solution:
 
 
 #https://leetcode.com/problems/merge-two-sorted-lists/
+
+
+'''
+
+:-: Initialization: dummy and cur are initialized to a new ListNode(). The dummy node acts as a placeholder to simplify 
+edge cases (like when the input lists are empty), and cur is used to track the current position in the merged list.
+
+
+
+:-: Merging Process:
+The while loop continues as long as both list1 and list2 are not None.
+Inside the loop, the values of the current nodes of list1 and list2 are compared.
+If list1.val is less than list2.val, cur.next is set to list1, and both list1 and cur are moved to their next nodes.
+If list2.val is less than or equal to list1.val, cur.next is set to list2, and both list2 and cur are moved to their next nodes.
+
+
+:-: Appending Remaining Nodes: After the loop, there might still be remaining nodes in either list1 or list2. The if statement checks 
+which list is not empty and appends the remaining nodes to the merged list by setting cur.next to the non-empty list.
+
+
+:-: Returning the Result: The merged list starts from dummy.next, skipping the dummy node itself, and this is returned as the result.
+'''
