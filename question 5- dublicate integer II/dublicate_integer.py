@@ -1,9 +1,6 @@
 from typing import Optional, List
 
 
-
-
-
 nums=[1,0,1,1]
 k= 4
 def solution(nums: List[int], k: int):
